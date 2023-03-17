@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: consentapidemo2-deployment
+  name: consentapidev
   labels:
-    app: consentapidemo2
+    app: consentapidev
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: consentapidemo2
+      app: consentapidev
   template:
     metadata:
       labels:
-        app: consentapidemo2
+        app: consentapidev
     spec:
       containers:
-      - name: consentapidemo2
+      - name: consentapidev
         image: datalakeregistrydev.azurecr.io/datalakeimgdev:dev_v1
         ports:
         - containerPort: 80
