@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: consentapidemo2-deployment
+  labels:
+    app: consentapidemo2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: consentapidemo2
+  template:
+    metadata:
+      labels:
+        app: consentapidemo2
+    spec:
+      containers:
+      - name: consentapidemo2
+        image: registryyash1289.azurecr.io/waconsentapiamg:waconsentapi_v1
+        ports:
+        - containerPort: 80
