@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: consentapidemo2
-        image: registryyash1289.azurecr.io/waconsentapiamg:waconsentapi_v1
+        image: datalakeregistrydev.azurecr.io/datalakeimgdev:v1
         ports:
         - containerPort: 80
