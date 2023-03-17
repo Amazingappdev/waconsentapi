@@ -11,6 +11,7 @@ env:
     CLUSTER_RESOURCE_GROUP: datalakeRG
     CONTAINER_NAME: datalakeimgdev
     DEPLOYMENT_MANIFEST_PATH: |
+        ./Dockerfile
         ./deployment.yml
         ./service.yml
 jobs:
@@ -62,4 +63,4 @@ jobs:
                 action: deploy
                 images: ${{ env.AZURE_CONTAINER_REGISTRY }}.azurecr.io/${{ env.CONTAINER_NAME }}:dev_v1
                 manifests: ${{ env.DEPLOYMENT_MANIFEST_PATH }}
-                namespace: datalakenamespace
+                namespace: default
