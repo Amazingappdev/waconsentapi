@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: consentapidemo2
-        image: datalakeregistrydev.azurecr.io/datalakeimgdev:v1
+        image: datalakeregistrydev.azurecr.io/datalakeimgdev:dev_v1
         ports:
         - containerPort: 80
