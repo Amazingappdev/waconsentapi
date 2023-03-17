@@ -2,7 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: consentapidemo2
-  namespace: default
+  namespace: datalakenamespace
 spec:
   ports:
     - protocol: TCP
